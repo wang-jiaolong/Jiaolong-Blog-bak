@@ -113,7 +113,13 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             items: [
               { text: '软件', link: '/favorite/software/' },
             ],
-          }
+          },
+          // {
+          //   text: '',
+          //   items: [
+          //     { text: '学习', link: '/favorite/study/' },
+          //   ],
+          // },
         ],
       },
       { text: '关于', link: '/about/' },
