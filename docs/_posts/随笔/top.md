@@ -9,9 +9,6 @@ categories:
   - 测试文章
 tags:
   - 
-author: 
-  name: xugaoyi
-  link: https://github.com/xugaoyi
 ---
 
 测试置顶
