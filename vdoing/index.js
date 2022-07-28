@@ -244,7 +244,7 @@ function getCardListDOM(dataList, row, config) {
         ${item.avatar ? '<img src="' + withBase(item.avatar) + '" class="no-zoom">' : ''}
         <div>
           <p class="name">${item.name}</p>
-          <p class="desc">${item.desc}</p>
+          <p class="desc">${item.desc ? item.desc : ''}</p>
         </div>
       </${item.link ? 'a' : 'span'}>
     `
