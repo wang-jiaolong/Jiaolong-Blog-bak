@@ -18,7 +18,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     '/': {
       lang: 'zh-CN',
       title: "Jiaolong's blog",
-      description: '关于程序与设计 | Jalen，Software Engineer | 这里是 @Jalen 的个人博客，与你一起发现更大的世界。',
+      description: 'Jiaolong，Software Engineer | 这里是 @Jiaolong 的个人博客，与你一起发现更大的世界。',
     }
   },
   // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
@@ -34,7 +34,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       bgTimeColor: true,     // 是否开启图片的背景色随一天的不同时间而变化，并且开启时间窗口提示，默认是 false。时间分为四种：白天（原图）、黄昏（偏黄）、晚上（偏黑）、深夜（偏深黑）
       bgTimeColorArray: ['transparent', 'rgba(255, 148, 48, .2)', 'rgba(0, 0, 0, .3)', 'rgba(0, 0, 0, .5)'],   // 第一个是白天的颜色（默认原图），第二个是黄昏的颜色，第三个是晚上的颜色，第四个是深夜的颜色。bgTimeColor 为 true 生效。提示：如果不想要这个效果，但是又想要时间窗口提示效果，则改为 ['transparent', 'transparent', 'transparent', 'transparent']
       descFade: true,   // 是否开启图片中间描述的淡入效果，默认为 false
-      desc: ["Web前端技术博客，积跬步以至千里，致敬每个爱学习的你 —— 来自 Evan Xu", "故事由我书写，旅程由你见证，传奇由她聆听 —— 来自 Young Kbt", "这一生波澜壮阔或是不惊都没问题 —— 来自 Weibw"],  // 多个描述，如果填写则覆盖 config.js 的 description，不填写默认读取 config.js 的 description，descFadeIn 为 true 生效
+      desc: ["Jiaolong，Software Engineer | 这里是 @Jiaolong 的个人博客，与你一起发现更大的世界。"],  // 多个描述，如果填写则覆盖 config.js 的 description，不填写默认读取 config.js 的 description，descFadeIn 为 true 生效
       descFontSize: '1.4rem',   // desc 的字体大小，默认 1.4rem。提示：原主题是 1.1rem
       descFadeInTime: 200,  // 描述的淡入效果持续时间，descFade 为 true 生效，默认 200 毫秒
       descFadeOutTime: 100,  // 描述的淡出效果持续时间，descFade 为 true 生效，默认 100 毫秒
@@ -272,7 +272,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       'meta',
       {
         name: 'keywords',
-        content: '前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown',
+        content: 'Jiaolong，Software Engineer | 这里是 @Jiaolong 的个人博客，与你一起发现更大的世界。',
       },
     ],
     ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
