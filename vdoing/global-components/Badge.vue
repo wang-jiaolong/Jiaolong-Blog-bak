@@ -41,4 +41,5 @@ export default {
     background-color darken(#ffe564, 35%)
   & + &
     margin-left 5px
+  margin: 0px 5px;
 </style>

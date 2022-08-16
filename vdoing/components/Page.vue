@@ -23,6 +23,10 @@
             }}</span>
           </h1>
 
+          <template v-if="this.$frontmatter.img">
+            <img :src = "this.$frontmatter.img"   style = "width: 100%;">
+          </template>
+
           <slot name="top" v-if="isShowSlotT" />
 
           <Content class="theme-vdoing-content" />

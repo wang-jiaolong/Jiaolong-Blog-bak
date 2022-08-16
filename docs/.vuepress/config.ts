@@ -55,13 +55,17 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             text: '',
             items: [
               { text: 'SwiftUI', link: '/pages/011a00/' },
+              { text: 'Python', link: '/pages/358811/' },
+
             ],
           },
           {
             text: '',
             items: [
               { text: 'Git', link: '/pages/169b33/' },
-              { text: 'FFmpeg', link: '/pages/bd941b/' },
+              { text: 'FFmpeg', link: '/ffmpeg/' },
+              { text: 'Linux', link: '/pages/3c6974/' },
+              { text: 'Docker', link: '/pages/350bb6/' },
             ],
           }
 
@@ -71,7 +75,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         text: '学习笔记',
         //link: '/web/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
-          { text: '《计算机组成与设计》', link: '/catalog/orgaAndDesign/' }
+          { text: '《计算机组成与设计》', link: '/pages/0bb29a/' }
         ],
       },
       {
@@ -236,6 +240,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     ],
     ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
+    ['meta', { name: 'referrer', content: 'no-referrer-when-downgrade' }],
+
     // [
     //   'script',
     //   {
