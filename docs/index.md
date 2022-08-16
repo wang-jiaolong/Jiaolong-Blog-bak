@@ -5,7 +5,11 @@ heroText: Jiaolong's blog
 tagline: 这里是 @Jiaolong 的个人博客，与你一起发现更大的世界。
 # actionText: 立刻进入 →
 # actionLink: /web/
-bannerBg: '/img/home-bg.jpg' # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
+# bannerBg: '/img/home-bg.jpg' # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
+
+
+pageClass: vdoing-index-class
+# bannerBg: /img/bg.jpg  # 你的图片路径(必须位于 public 下)，可以是 URL
 
 # features: # 可选的
 #   - title: 前端
@@ -84,3 +88,7 @@ bannerBg: '/img/home-bg.jpg' # auto => 网格纹背景(有bodyBgImg时无背景)
 - **GitHub**: <https://github.com/xugaoyi>
 
 </br>  -->
+
+<ClientOnly>
+  <IndexBigImg />
+</ClientOnly>
