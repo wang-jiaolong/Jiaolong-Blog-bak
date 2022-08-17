@@ -9,7 +9,7 @@ tagline: 这里是 @Jiaolong 的个人博客，与你一起发现更大的世界
 
 
 pageClass: vdoing-index-class
-# bannerBg: /img/bg.jpg  # 你的图片路径(必须位于 public 下)，可以是 URL
+bannerBg: /img/bg2.png  # 你的图片路径(必须位于 public 下)，可以是 URL
 
 # features: # 可选的
 #   - title: 前端

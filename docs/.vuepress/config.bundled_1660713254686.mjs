@@ -125,7 +125,7 @@ var config_default = defineConfig4CustomTheme({
       bubblePosition: 0,
       bubbleNum: 200
     },
-    bodyBgImgOpacity: 0.4,
+    bodyBgImgOpacity: 0.5,
     nav: [
       { text: "\u9996\u9875", link: "/" },
       {

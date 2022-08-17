@@ -1,5 +1,5 @@
 <template>
-  <div class="index-bigimg" style="display: none"></div>
+  <div class="index-bigimg" style="display: none;"></div>
 </template>
 <script>
 // 两个变量分别是背景元素的 class、生成的箭头 class
@@ -156,6 +156,7 @@ export default {
         if (document.documentElement.scrollTop < windowH) {
           this.blurText(this.navColor);
           this.noBgBlur();
+
         } else {
           if (this.switchNavColor && this.navColor == 1) {
             this.blurText(2);
@@ -170,9 +171,16 @@ export default {
     bgBlur() {
       let navbar = document.getElementsByClassName("navbar")[0];
       navbar.className = "navbar blur";
+
+      // let bigBg = document.getElementsByClassName("body-bg")[0];
+      // bigBg.style.filter = "blur(10px)"
     },
     // 导航栏透明
     noBgBlur() {
+
+      // let bigBg = document.getElementsByClassName("body-bg")[0];
+      // bigBg.style.filter = "blur(0px)"
+
       let navbar = document.getElementsByClassName("navbar")[0];
       navbar.className = "navbar navbar1 blur";
     },

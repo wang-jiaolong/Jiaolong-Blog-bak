@@ -56,4 +56,5 @@ export default {
   height 100vh
   width 100vw
   transition background 0.5s
+  filter blur(20px)
 </style>

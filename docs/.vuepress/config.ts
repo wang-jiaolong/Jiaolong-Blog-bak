@@ -26,7 +26,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   // 主题配置
   themeConfig: {
     // bodyBgImg
-    bodyBgImg: '/img/bg.jpg',  // 你的图片路径(必须位于 public 下)，可以是 URL
+    bodyBgImg: '/img/bg2.png',  // 你的图片路径(必须位于 public 下)，可以是 URL
     indexImg: {
       navColor: 2,    // 导航栏左侧名字、中间搜索框、右侧字体的颜色，1 是黑色，2 是白色。默认是 1
       switchNavColor: true,    // 页面移出大图片的位置后，navColor 是否变换，如由白色变黑色，黑色变白色。默认是 false

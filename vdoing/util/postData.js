@@ -95,14 +95,29 @@ export function categoriesAndTags (groupPosts) {
     })
   }
 
+
   for (let key in groupPosts.tags) {
     tagsArr.push({
       key,
       length: groupPosts.tags[key].length
     })
   }
+
+
+  categoriesArr.sort((prev, next) => {
+    return next.length - prev.length
+  })
+  
+  tagsArr.sort((prev, next) => {
+    return next.length - prev.length
+  })
+
   return {
     categories: categoriesArr,
     tags: tagsArr
   }
+}
+
+export function sortNumbers(a,b){
+  return a[1]-b[1];
 }

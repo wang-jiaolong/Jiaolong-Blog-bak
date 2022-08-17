@@ -101,7 +101,7 @@ export default {
         line-height 1rem
         font-size 0.6rem
         text-align center
-        opacity 0.6
+        opacity 0.8
         transition opacity 0.3s
       &.active
         background $accentColor
