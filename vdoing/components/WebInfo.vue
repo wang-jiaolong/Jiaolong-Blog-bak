@@ -19,12 +19,12 @@
         {{ createToNowDay != 0 ? createToNowDay + " 天" : "不到一天" }}
       </div>
     </div>
-<!--
+
     <div class="webinfo-item">
       <div class="webinfo-item-title">本站总字数：</div>
       <div class="webinfo-content">{{ totalWords }} 字</div>
     </div>
--->
+
     <div class="webinfo-item">
       <div class="webinfo-item-title">最后活动时间：</div>
       <div class="webinfo-content">
@@ -41,7 +41,7 @@
         次
       </div>
     </div>
-<!--
+
     <div v-if="indexView" class="webinfo-item">
       <div class="webinfo-item-title">您的访问排名：</div>
       <div class="webinfo-content busuanzi">
@@ -51,13 +51,11 @@
         名
       </div>
     </div>
-    -->
   </div>
 </template>
 
 <script>
 import { dayDiff, timeDiff, lastUpdatePosts, fetch } from "../util/webSiteInfo";
-
 export default {
   data() {
     return {
@@ -92,7 +90,6 @@ export default {
       } else {
         this.mdFileCount = this.$filterPosts.length;
       }
-      //eachFileWords = readEachFileWords([''], 300, 160);
       if (totalWords == "archives" && eachFileWords) {
         let archivesWords = 0;
         eachFileWords.forEach((itemFile) => {
