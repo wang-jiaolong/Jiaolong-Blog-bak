@@ -43,7 +43,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       bubblePosition: 0,  // 气泡效果的位置，范围：0-100，不同数值代表不同的起始位置，0是整个图片，50是半张图（一半的下方）。bubble 为 true 生效。默认是 0
       bubbleNum: 200,   // 气泡的个数，bubble 为 true 生效，默认 200 个
     },
-    bodyBgImgOpacity: 0.4, // body 背景图透明度，选值 0 ~ 1.0, 默认0.5
+    bodyBgImgOpacity: 0.5, // body 背景图透明度，选值 0 ~ 1.0, 默认0.5
     nav: [
       { text: '首页', link: '/' },
       // {
