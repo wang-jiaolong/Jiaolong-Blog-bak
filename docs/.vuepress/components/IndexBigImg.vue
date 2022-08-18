@@ -13,10 +13,7 @@ export default {
       switchNavColor: false,
       bgTimeColor: false,
       bgTimeColorArray: [
-        "transparent", // 透明
-        "rgba(255, 148, 48, .2)",
-        "rgba(0, 0, 0, .3)",
-        "rgba(0, 0, 0, .5)",
+        "transparent"
       ],
       descFade: false,
       desc: [],
@@ -48,9 +45,9 @@ export default {
     this.initConfig();
 
     // 初始化组件功能
-    if (this.bgTimeColor) {
-      this.bgTimeColorAndTip();
-    }
+    // if (this.bgTimeColor) {
+    //   this.bgTimeColorAndTip();
+    // }
     setTimeout(() => {
       this.noBgBlur();
     }, 100);

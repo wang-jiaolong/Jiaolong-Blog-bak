@@ -149,7 +149,6 @@ export default {
       &.year
         position sticky
         top $navbarHeight
-        background var(--mainBg)
         z-index 1
       &.year:not(:first-child)
         margin-top 3.5rem
@@ -171,7 +170,7 @@ export default {
         &:hover
           padding-left 2.5rem
           color $accentColor
-          background #f9f9f9
+          background #f9f9f95c
         @media (max-width $contentWidth + 80)
           padding 0.5rem 1rem
           font-weight normal

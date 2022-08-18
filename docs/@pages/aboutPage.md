@@ -1,16 +1,10 @@
 ---
-home: true
+aboutPage: true
+title: 关于
 heroText: Jiaolong's blog
 tagline: 这里是 @Jiaolong 的个人博客，与你一起发现更大的世界。
 permalink: /about/
-sidebar: false
 article: false
-author: 
-  name: xugaoyi
-  link: https://github.com/xugaoyi
-postList: none
-title: 关于
-date: 2022-07-23 20:34:09
 ---
 
 ## About Me

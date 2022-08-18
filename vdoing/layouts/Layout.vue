@@ -47,6 +47,10 @@
     <!-- 归档页 -->
     <ArchivesPage v-else-if="$page.frontmatter.archivesPage" />
 
+    <!-- 关于页 -->
+    <AboutPage v-else-if="$page.frontmatter.aboutPage" />
+
+
     <!-- 文章页或其他页 -->
     <Page v-else :sidebar-items="sidebarItems">
       <template #top v-if="pageSlotTop">
@@ -106,6 +110,7 @@ import Sidebar from '@theme/components/Sidebar.vue'
 import Buttons from '@theme/components/Buttons.vue'
 import Footer from '@theme/components/Footer'
 import BodyBgImg from '@theme/components/BodyBgImg'
+import AboutPage from '@theme/components/AboutPage.vue'
 import { resolveSidebarItems } from '../util'
 import storage from 'good-storage' // 本地存储
 import _ from 'lodash'
@@ -114,7 +119,7 @@ const MOBILE_DESKTOP_BREAKPOINT = 719 // refer to config.styl
 const NAVBAR_HEIGHT = 58 // 导航栏高度
 
 export default {
-  components: { Home, Navbar, Page, CategoriesPage, TagsPage, ArchivesPage, Sidebar, Footer, Buttons, BodyBgImg },
+  components: { Home, Navbar, Page, CategoriesPage, AboutPage , TagsPage, ArchivesPage, Sidebar, Footer, Buttons, BodyBgImg },
 
   data() {
     return {
