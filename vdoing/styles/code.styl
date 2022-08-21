@@ -1,17 +1,20 @@
 body {$contentClass}
   code
     color var(--textLightenColor)
-    padding 0.25rem 0.5rem
+    padding 0.25rem 0.4rem
     margin 0
     font-size 0.9em
     // background-color rgba(27,31,35,0.05)
-    background-color rgba(100,100,100,0.08)
-    border-radius 3px
+    background-color #64646482
+    border-radius 5px
     .token
       &.deleted
         color #EC5975
       &.inserted
         color $accentColor
+  p
+    code
+      margin 0 5px
 
 body {$contentClass}
   pre, pre[class*="language-"]

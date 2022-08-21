@@ -157,7 +157,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // docsBranch: 'master', // 编辑的文件所在分支，默认master。 注意：如果你的分支是main则修改为main
     editLinks: false, // 启用编辑
     editLinkText: '编辑',
-    // searchPlaceholder: '按 S 搜索',
+    searchPlaceholder: '按 S 搜索',
     //*** 以下是Vdoing主题相关配置，文档：https://doc.xugaoyi.com/pages/a20ce8/ ***//
 
     // category: false, // 是否打开分类功能，默认true
@@ -203,7 +203,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      avatar: '/img/avatar.png',
+      avatar: '/img/avatar.jpg',
       name: 'Jiaolong',
       slogan: '无限进步',
     },
@@ -226,13 +226,18 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           iconClass: 'icon-weibo',
           title: '微博',
           link: 'https://weibo.com/u/7521880154'
+        },
+        {
+          iconClass: 'icon-zhihu',
+          title: '知乎',
+          link: 'https://weibo.com/u/7521880154'
         }
       ]
     },
 
     // 页脚信息
     footer: { // 页脚信息
-      createYear: 2021, // 博客创建年份
+      createYear: 2022, // 博客创建年份
       copyrightInfo: '| Jiaolong Wang', // 博客版权信息，支持a标签
     },
 
@@ -279,6 +284,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
     ['meta', { name: 'referrer', content: 'no-referrer-when-downgrade' }],
     ['link', { rel: 'stylesheet', href: 'https://at.alicdn.com/t/font_3077305_pt8umhrn4k9.css' }],
+    ['link', { rel: 'stylesheet', href: '//at.alicdn.com/t/font_3114978_qe0b39no76.css' }]
 
     // [
     //   'script',
@@ -322,7 +328,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     //     ],
     //   }
     // ],
-
+    [
+      {
+        name: 'custom-plugins',
+        globalUIComponents: ["BlockToggle"] // 2.x 版本 globalUIComponents 改名为 clientAppRootComponentFiles
+      }
+    ],
     [
       'one-click-copy', // 代码块复制按钮
       {

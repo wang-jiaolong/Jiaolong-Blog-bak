@@ -69,7 +69,7 @@ $lineNumbersWrapperWidth = 2.5rem
   --textColor: rgb(198 198 198)
   --textLightenColor: #00a4d6
   // --borderColor: #2C2C3A
-  --borderColor: #30363d
+  --borderColor: #515254
   --codeBg: #252526
   --codeColor: #fff
   --linkColor: #1e1e22
@@ -96,3 +96,14 @@ $lineNumbersWrapperWidth = 2.5rem
   --bodyBg: rgba(30,30,34,1)
 .theme-style-line.theme-mode-read
   --bodyBg: rgba(245,245,213,1)
+
+div[class*="language-"]
+    .highlight-lines
+      .highlighted
+        background-color rgba(0,0,0,.66)
+    &.line-numbers-mode
+      .highlight-lines .highlighted
+        &:before
+          background-color rgba(0,0,0,.66)
+  div[class*="language-"].line-numbers-mode::after  // 代码块的行数和内容分割线颜色
+    border-right 1px solid rgba(0, 0, 0, 0.66)
