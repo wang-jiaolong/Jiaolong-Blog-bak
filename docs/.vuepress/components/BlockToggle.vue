@@ -36,6 +36,7 @@ export default {
           ) {
             modeHeight = this.getHiddenElementHight(item);
           }
+
           // modeHeight 比主题多 12，所以减掉，并显示赋值，触发动画过渡效果
           modeHeight -= 12;
           item.style.height = modeHeight + "px";
