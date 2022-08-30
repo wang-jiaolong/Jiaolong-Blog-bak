@@ -144,7 +144,7 @@ export default {
       color var(--textLightenColor)
       padding 0.2rem 0.7rem
       font-size 0.9em
-      background-color rgba(128, 128, 128, 0.08)
+      background-color rgba(128, 128, 128, 0.2)
       border-radius 3px
       opacity 0.8
   .last-updated

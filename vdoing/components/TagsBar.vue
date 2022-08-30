@@ -41,13 +41,13 @@ export default {
   },
   data () {
     return {
-      tagBgColor: ['#11a8cd', '#F8B26A', '#67CC86', '#E15B64', '#F47E60', '#849B87'],
+      tagBgColor: ['#00b4d8', '#48cae4', '#90e0ef','#ade8f4','#caf0f8'],
       tagStyleList: []
     }
   },
   created () {
     for (let i = 0, tagH = this.tags.length; i < tagH; i++) {
-      this.tagStyleList.push(this.getTagStyle())
+      this.tagStyleList.push(this.getTagStyle(i))
     }
   },
   computed: {
@@ -60,9 +60,9 @@ export default {
     }
   },
   methods: {
-    getTagStyle () {
+    getTagStyle (index) {
       const tagBgColor = this.tagBgColor
-      const randomColor = tagBgColor[Math.floor(Math.random() * tagBgColor.length)]
+      const randomColor = index < tagBgColor.length-1 ? tagBgColor[index] : tagBgColor[tagBgColor.length-1]
       return `background: ${randomColor};--randomColor:${randomColor};`
     }
   }

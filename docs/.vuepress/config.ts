@@ -46,26 +46,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     bodyBgImgOpacity: 0.5, // body 背景图透明度，选值 0 ~ 1.0, 默认0.5
     nav: [
       { text: '首页', link: '/' },
-      // {
-      //   text: '学习笔记',
-      //   link: '/web/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
-      //   items: [
-      //     // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
-      //     {
-      //       text: '前端文章',
-      //       items: [
-      //         { text: 'JavaScript', link: '/pages/8143cc480faf9a11/' },
-      //       ],
-      //     },
-      //     {
-      //       text: '学习笔记',
-      //       items: [
-      //         { text: '《JavaScript教程》', link: '/note/javascript/' },
-      //         { text: '《JavaScript高级程序设计》', link: '/note/js/' }
-      //       ],
-      //     },
-      //   ],
-      // },
+
       {
         text: '技术文档',
         link: '/docs/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
@@ -93,7 +74,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
       {
         text: '学习笔记',
-        //link: '/web/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
           { text: '《计算机组成与设计》', link: '/pages/0bb29a/' }
         ],
@@ -123,7 +103,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         ],
       },
       {
-        text: '收藏',
+        text: '导航',
         link: '/favorite/website/',
         items: [
           {
@@ -165,21 +145,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // archive: false, // 是否打开归档功能，默认true
     // categoryText: '随笔', // 碎片化文章（_posts文件夹的文章）预设生成的分类值，默认'随笔'
 
-    // pageStyle: 'line', // 页面风格，可选值：'card'卡片 | 'line' 线（未设置bodyBgImg时才生效）， 默认'card'。 说明：card时背景显示灰色衬托出卡片样式，line时背景显示纯色，并且部分模块带线条边框
-
-    // bodyBgImg: [
-    //   'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175828.jpeg',
-    //   'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175845.jpeg',
-    //   'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175846.jpeg'
-    // ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时隔bodyBgImgInterval切换一张。
-    // bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0.1~1.0, 默认0.5
-    // bodyBgImgInterval: 15, // body多张背景图时的切换间隔, 默认15，单位s
-    // titleBadge: false, // 文章标题前的图标是否显示，默认true
-    // titleBadgeIcons: [ // 文章标题前图标的地址，默认主题内置图标
-    //   '图标地址1',
-    //   '图标地址2'
-    // ],
-    // contentBgStyle: 1, // 文章内容块的背景风格，默认无. 1 方格 | 2 横线 | 3 竖线 | 4 左斜线 | 5 右斜线 | 6 点状
 
     updateBar: { // 最近更新栏
       showToArticle: false, // 显示到文章页底部，默认true
@@ -203,7 +168,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      avatar: '/img/avatar.jpg',
+      avatar: '/img/avatar.png',
       name: 'Jiaolong',
       slogan: '无限进步',
     },
@@ -309,25 +274,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     //   },
     // ],
 
-    // 全文搜索。 ⚠️注意：此插件会在打开网站时多加载部分js文件用于搜索，导致初次访问网站变慢。如在意初次访问速度的话可以不使用此插件！（推荐：vuepress-plugin-thirdparty-search）
-    // 'fulltext-search',
-
-    // 可以添加第三方搜索链接的搜索框（继承原官方搜索框的配置参数）
-    // [
-    //   'thirdparty-search',
-    //   {
-    //     thirdparty: [
-    //       {
-    //         title: '在Bing中搜索',
-    //         frontUrl: 'https://cn.bing.com/search?q=',
-    //       },
-    //       {
-    //         title: '通过百度搜索本站的',
-    //         frontUrl: 'https://www.baidu.com/s?wd=site%3Axugaoyi.com%20',
-    //       },
-    //     ],
-    //   }
-    // ],
     [
       {
         name: 'custom-plugins',
