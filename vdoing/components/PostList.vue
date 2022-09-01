@@ -185,7 +185,7 @@ export default {
       position absolute
       top -1px
       right 0
-      font-size 2.5rem
+      font-size 3rem
       color $activeColor
       opacity 0.85
     .title-wrapper
@@ -208,6 +208,7 @@ export default {
           margin-left 0rem
           transform translate(0, -0.15rem)
           display inline-block
+          font-weight: bolder;
         a
           display block
           @media (max-width $MQMobile)

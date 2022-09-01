@@ -86,7 +86,7 @@ export default {
         // color $accentColor
       &:not(.active):hover
         color $accentColor
-        background #f8f8f8
+        background #ffffff
         border-color $accentColor
         span
           opacity 0.8
@@ -105,7 +105,7 @@ export default {
         transition opacity 0.3s
       &.active
         background $accentColor
-        color var(--mainBg)
+        color #ffffff
         padding-left 0.8rem
         border-radius 1px
         border-color transparent
