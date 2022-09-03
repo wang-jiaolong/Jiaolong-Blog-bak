@@ -26,6 +26,7 @@
           :categoriesData="$categoriesAndTags.categories"
           :category="category"
         />
+
       </template>
     </MainLayout>
   </div>
@@ -36,6 +37,7 @@ import MainLayout from '@theme/components/MainLayout'
 import PostList from '@theme/components/PostList'
 import Pagination from '@theme/components/Pagination'
 import CategoriesBar from '@theme/components/CategoriesBar'
+import TagsBar from '@theme/components/TagsBar'
 
 export default {
   data() {
@@ -46,7 +48,7 @@ export default {
       currentPage: 1// 当前页
     }
   },
-  components: { MainLayout, PostList, Pagination, CategoriesBar },
+  components: { MainLayout, PostList, Pagination, CategoriesBar, TagsBar },
   mounted() {
     const queryCategory = this.$route.query.category
     if (queryCategory) {

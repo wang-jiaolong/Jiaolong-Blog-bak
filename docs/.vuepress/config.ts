@@ -175,8 +175,13 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social)
     social: {
-      // iconfontCssFile: '//at.alicdn.com/t/xxx.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自己添加。阿里图片库：https://www.iconfont.cn/
+      iconfontCssFile: '//at.alicdn.com/t/c/font_2315523_ysa10ydk21m.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自己添加。阿里图片库：https://www.iconfont.cn/
       icons: [
+        {
+          iconClass: 'icon-home-fill',
+          title: '个人主页',
+          link: 'https://jiaolong.xyz/'
+        },
         {
           iconClass: 'icon-youjian',
           title: '发邮件',
@@ -344,7 +349,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
   markdown: {
     lineNumbers: true,
-    extractHeaders: ['h2', 'h3'], // 提取标题到侧边栏的级别，默认['h2', 'h3']
+    extractHeaders: ['h2', 'h3','h4'], // 提取标题到侧边栏的级别，默认['h2', 'h3']
   },
 
   // 监听文件变化并重新构建

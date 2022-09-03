@@ -17,11 +17,13 @@
         />
       </template>
       <template #mainRight>
+   
         <TagsBar
           v-if="$categoriesAndTags.tags.length"
           :tagsData="$categoriesAndTags.tags"
           :tag="tag"
         />
+
       </template>
     </MainLayout>
   </div>
@@ -32,6 +34,7 @@ import MainLayout from '@theme/components/MainLayout'
 import PostList from '@theme/components/PostList'
 import Pagination from '@theme/components/Pagination'
 import TagsBar from '@theme/components/TagsBar'
+import CategoriesBar from '@theme/components/CategoriesBar'
 
 export default {
   data() {
@@ -42,7 +45,7 @@ export default {
       currentPage: 1// 当前页
     }
   },
-  components: { MainLayout, PostList, Pagination, TagsBar },
+  components: { MainLayout, PostList, Pagination, TagsBar,CategoriesBar },
   mounted() {
     const queryTag = this.$route.query.tag
 

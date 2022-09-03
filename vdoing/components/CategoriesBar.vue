@@ -4,7 +4,7 @@
       to="/categories/"
       class="title iconfont icon-wenjianjia"
       title="全部分类"
-      >{{ length === 'all' ? '全部分类' : '分类' }}</router-link
+      >{{ '分类' }}</router-link
     >
 
     <div class="categories">
@@ -92,17 +92,18 @@ export default {
           opacity 0.8
       span
         float right
-        background-color var(--textColor)
+        background-color #ffffff
         color var(--mainBg)
         border-radius 8px
         padding 0 0.13rem
         min-width 1rem
         height 1rem
         line-height 1rem
-        font-size 0.6rem
+        font-size 0.8rem
         text-align center
         opacity 0.8
         transition opacity 0.3s
+        font-weight bolder
       &.active
         background $accentColor
         color #ffffff
