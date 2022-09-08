@@ -122,6 +122,12 @@
         <template
           v-else-if="!homeData.postList || homeData.postList === 'detailed'"
         >
+
+          <template v-if="showBanner">
+            <img src = "/img/about_blog.png" style = "width:100% ;margin-bottom: 0.8rem;background: var(--mainBg);   border-radius: 5px;">
+          </template>
+
+
           <PostList :currentPage="currentPage" :perPage="perPage" />
           <Pagination
             :total="total"

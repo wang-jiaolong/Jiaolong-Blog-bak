@@ -11,6 +11,7 @@ const os = require('os');
 
 const PREFIX = '/pages/'
 
+
 /**
  * 给.md文件设置frontmatter(标题、日期、永久链接等数据)
  */
@@ -46,26 +47,23 @@ function setFrontmatter(sourceDir, themeConfig) {
       });
 
       let cateStr = '';
-      if (!(isCategory === false)) {
-        cateStr = os.EOL + 'categories:' + cateLabelStr
-      };
+      // if (!(isCategory === false)) {
+      //   cateStr = os.EOL + 'categories:' + cateLabelStr
+      // };
 
       let hiddenStr = '';
-      if (file.filePath.indexOf('02.技术文档')  > -1 || file.filePath.indexOf('03.学习笔记')  > -1 || file.filePath.indexOf('06.收藏夹')  > -1) {
+      if (file.filePath.indexOf('__') > -1) {
         hiddenStr = os.EOL + 'hidden: true'
       };
 
 
       // 注意下面这些反引号字符串的格式会映射到文件
-      const tagsStr = isTag === false ? '' : `
-tags:
-  - `;
+      const tagsStr = isTag === false ? '' : ``;
 
       const fmData = `---
 title: ${file.name}
 date: ${dateStr}
-permalink: ${getPermalink()}${(file.filePath.indexOf('_posts') > -1  || file.filePath.indexOf('01.Blog') > -1 )  ? os.EOL + 'sidebar: false' : ''}${cateStr}${tagsStr}
-${hiddenStr}
+permalink: ${getPermalink()}${(file.filePath.indexOf('_posts') > -1  || file.filePath.indexOf('01.Blog') > -1 )  ? os.EOL + 'sidebar: false' : ''}${cateStr}${tagsStr}${hiddenStr}
 ---`;
 
       fs.writeFileSync(file.filePath, `${fmData}${os.EOL}${fileMatterObj.content}`); // 写入
@@ -92,14 +90,14 @@ ${hiddenStr}
         hasChange = true;
       }
 
-      if ((file.filePath.indexOf('_posts') > -1  || file.filePath.indexOf('01.Blog') > -1 ) && !matterData.hasOwnProperty('sidebar')) { // auto侧边栏，_posts文件夹特有
+      if (file.filePath.indexOf('_posts') > -1 && !matterData.hasOwnProperty('sidebar')) { // auto侧边栏，_posts文件夹特有
         matterData.sidebar = "false";
         hasChange = true;
       }
 
       if (!matterData.hasOwnProperty('hidden') ) { // 日期
     
-        if (file.filePath.indexOf('02.技术文档')  > -1 || file.filePath.indexOf('03.学习笔记')  > -1 || file.filePath.indexOf('06.收藏夹')  > -1) {
+        if (file.filePath.indexOf('__') > -1) {
           matterData.hidden = 'true';
           hasChange = true;
         };
@@ -107,18 +105,18 @@ ${hiddenStr}
 
       }
 
-      if (!matterData.hasOwnProperty('pageComponent') && matterData.article !== false) { // 是文章页才添加分类和标签
-        if (isCategory !== false && !matterData.hasOwnProperty('categories')) { // 分类
-          matterData.categories = getCategories(file, categoryText)
-          hasChange = true;
-        }
-        if (isTag !== false && !matterData.hasOwnProperty('tags')) { // 标签
-          matterData.tags = [''];
-          hasChange = true;
-        }
+      //if (!matterData.hasOwnProperty('pageComponent') && matterData.article !== false) { // 是文章页才添加分类和标签
+        // if (isCategory !== false && !matterData.hasOwnProperty('categories')) { // 分类
+        //   matterData.categories = 
+        //   hasChange = true;
+        // }
+        // if (isTag !== false && !matterData.hasOwnProperty('tags')) { // 标签
+        //   matterData.tags = [''];
+        //   hasChange = true;
+        // }
 
 
-      }
+      //}
 
       // 扩展自动生成frontmatter的字段
       if (type(extendFrontmatter) === 'object') {
@@ -142,6 +140,7 @@ ${hiddenStr}
     }
   })
 }
+
 
 // 获取分类数据
 function getCategories(file, categoryText) {
