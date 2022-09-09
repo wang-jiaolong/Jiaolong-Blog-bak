@@ -64,6 +64,10 @@ function setFrontmatter(sourceDir, themeConfig) {
 title: ${file.name}
 date: ${dateStr}
 permalink: ${getPermalink()}${(file.filePath.indexOf('_posts') > -1  || file.filePath.indexOf('01.Blog') > -1 )  ? os.EOL + 'sidebar: false' : ''}${cateStr}${tagsStr}${hiddenStr}
+categories:
+  - 
+tags:
+  - 
 ---`;
 
       fs.writeFileSync(file.filePath, `${fmData}${os.EOL}${fileMatterObj.content}`); // 写入

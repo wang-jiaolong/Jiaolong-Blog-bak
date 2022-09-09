@@ -6,6 +6,7 @@ tagline: 这里是 @Jiaolong 的个人博客，与你一起发现更大的世界
 permalink: /about/
 article: false
 ---
+<img src = "/img/about_blog.png">
 
 ## About Me
 
@@ -42,5 +43,5 @@ Hi，我是Jiaolong，一个浪漫且孤独的白日梦想家，一个有仪式�
 
 ## 本站
 
-本站使用了vdoing模板，此外还进行了一些自己的修改：[关于本站主题](https://blog.jiaolong.xyz/pages/7593c4/)
+本站使用了vdoing模板，此外还进行了一些自己的修改：[关于本站主题](/pages/7593c4/)
 
