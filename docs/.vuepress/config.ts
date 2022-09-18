@@ -17,7 +17,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: "Jiaolong's blog",
+      title: "Jiaolong's Blog",
       description: '这里是 @Jiaolong 的个人博客，与你一起发现更大的世界。',
     }
   },
@@ -49,7 +49,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
       {
         text: '技术文档',
-        link: '/docs/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+        //link: '/docs/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
           // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
           {
@@ -63,19 +63,24 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: '',
             items: [
-              { text: 'Git', link: '/pages/169b33/' },
-              { text: 'FFmpeg', link: '/ffmpeg/' },
               { text: 'Linux', link: '/pages/3c6974/' },
-              { text: 'Docker', link: '/pages/350bb6/' },
+
+            ],
+          },
+          {
+            text: '',
+            items: [
+              { text: 'Git', link: '/pages/169b33/' },
             ],
           }
 
         ],
       },
       {
-        text: '学习笔记',
+        text: '音视频',
         items: [
-          { text: '《计算机组成与设计》', link: '/pages/0bb29a/' }
+          { text: 'FFmpeg', link: '/pages/07bf5a/' },
+          { text: 'x264', link: '/pages/766f2c/' }
         ],
       },
       {

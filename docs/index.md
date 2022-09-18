@@ -1,7 +1,7 @@
 ---
 home: true
 # heroImage: /img/web.png
-heroText: Jiaolong's blog
+heroText: Jiaolong's Blog
 tagline: 这里是 @Jiaolong 的个人博客，与你一起发现更大的世界。
 # actionText: 立刻进入 →
 # actionLink: /web/
