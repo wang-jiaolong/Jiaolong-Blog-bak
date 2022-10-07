@@ -100,7 +100,7 @@ export default {
     },
     perPage: {
       type: Number,
-      default: 10
+      default: 20
     }
   },
   data() {
