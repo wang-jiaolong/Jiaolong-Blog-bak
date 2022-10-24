@@ -9,6 +9,7 @@ import baiduCode from './config/baiduCode' // 百度统计hm码
 import htmlModules from './config/htmlModules' // 自定义插入的html块
 import { readFileList, readTotalFileWords, readEachFileWords } from './webSiteInfo/readFile'
 
+import nav from './config/nav' // 导航栏
 
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
@@ -44,95 +45,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       bubbleNum: 200,   // 气泡的个数，bubble 为 true 生效，默认 200 个
     },
     bodyBgImgOpacity: 0.5, // body 背景图透明度，选值 0 ~ 1.0, 默认0.5
-    nav: [
-      { text: '首页', link: '/' },
-
-      {
-        text: '技术文档',
-        //link: '/docs/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
-        items: [
-          // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
-          {
-            text: '',
-            items: [
-              { text: 'SwiftUI', link: '/pages/011a00/' },
-              { text: 'Python', link: '/pages/358811/' },
-
-            ],
-          },
-          {
-            text: '',
-            items: [
-              { text: 'Linux', link: '/pages/3c6974/' },
-
-            ],
-          },
-          {
-            text: '',
-            items: [
-              { text: 'Git', link: '/pages/169b33/' },
-            ],
-          }
-
-        ],
-      },
-      {
-        text: '音视频',
-        items: [
-          { text: 'FFmpeg', link: '/pages/07bf5a/' },
-          { text: 'x264', link: '/pages/766f2c/' }
-        ],
-      },
-      {
-        text: '索引',
-        link: '/archives/',
-        items: [
-          {
-            text: '',
-            items: [
-              { text: '归档', link: '/archives/' },
-            ],
-          },
-          {
-            text: '',
-            items: [
-              { text: '分类', link: '/categories/' },
-            ],
-          },
-          {
-            text: '',
-            items: [
-              { text: '标签', link: '/tags/' },
-            ],
-          }
-        ],
-      },
-      {
-        text: '导航',
-        link: '/favorite/website/',
-        items: [
-          {
-            text: '',
-            items: [
-              { text: '网站', link: '/favorite/website/' },
-            ],
-          },
-          {
-            text: '',
-            items: [
-              { text: '软件', link: '/favorite/software/' },
-            ],
-          },
-          // {
-          //   text: '',
-          //   items: [
-          //     { text: '学习', link: '/favorite/study/' },
-          //   ],
-          // },
-        ],
-      },
-      { text: '关于', link: '/about/' },
-    ],
+    nav,
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/avatar.png', // 导航栏logo
     // repo: 'xugaoyi/vuepress-theme-vdoing', // 导航栏右侧生成Github链接
@@ -319,19 +232,19 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         },
       },
     ],
-    [
-      "vuepress-plugin-comment",
-      {
-        choosen: "valine",
-        // options选项中的所有参数，会传给Valine的配置
-        options: {
-          el: "#valine-vuepress-comment",
-          appId: "IAwSY6g3yWNPvsm2OG84wyvw-gzGzoHsz",
-          appKey: "QnBLYJQWgilA2hzfTMde7CuD",
-          path: '<%- frontmatter.to.path %>'
-        }
-      }
-    ],
+    // [
+    //   "vuepress-plugin-comment",
+    //   {
+    //     choosen: "valine",
+    //     // options选项中的所有参数，会传给Valine的配置
+    //     options: {
+    //       el: "#valine-vuepress-comment",
+    //       appId: "IAwSY6g3yWNPvsm2OG84wyvw-gzGzoHsz",
+    //       appKey: "QnBLYJQWgilA2hzfTMde7CuD",
+    //       path: '<%- frontmatter.to.path %>'
+    //     }
+    //   }
+    // ],
     [
       '@vuepress/last-updated', // "上次更新"时间格式
       {
