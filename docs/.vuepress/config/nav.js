@@ -38,8 +38,6 @@ export default [
             text: '',
             items: [
               { text: 'VSCode', link: '/pages/b15c01/' },
-
-  
             ],
           }
         ],
@@ -49,6 +47,13 @@ export default [
       items: [
         { text: 'FFmpeg', link: '/pages/07bf5a/' },
         { text: 'x264', link: '/pages/766f2c/' }
+      ],
+    },
+    {
+      text: 'Books',
+      items: [
+        { text: '《计算机组成与设计》', link: '/pages/0bb29a/' },
+        { text: '《程序员的自我修养》', link: '/pages/1bb0d6/' }
       ],
     },
     {
