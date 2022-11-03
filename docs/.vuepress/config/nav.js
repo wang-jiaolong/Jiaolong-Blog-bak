@@ -1,7 +1,7 @@
 export default [
     { text: '首页', link: '/' },
     {
-      text: '技术文档',
+      text: 'Docs',
       //link: '/docs/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
       items: [
         // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
@@ -13,20 +13,6 @@ export default [
 
           ],
         },
-        {
-          text: '',
-          items: [
-            { text: 'Linux', link: '/pages/3c6974/' },
-
-          ],
-        },
-        {
-          text: '',
-          items: [
-            { text: 'Git', link: '/pages/169b33/' },
-          ],
-        }
-
       ],
     },
     {
@@ -38,8 +24,17 @@ export default [
             text: '',
             items: [
               { text: 'VSCode', link: '/pages/b15c01/' },
+              { text: 'Git', link: '/pages/169b33/' }
             ],
-          }
+          },
+          {
+            text: '',
+            items: [
+              { text: 'Linux', link: '/pages/3c6974/' },
+  
+            ],
+          },
+
         ],
     },
     {
