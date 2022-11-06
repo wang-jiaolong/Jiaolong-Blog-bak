@@ -30,8 +30,9 @@ export default [
           {
             text: '',
             items: [
+              { text: 'Windows', link: '/pages/7410be/' },
               { text: 'Linux', link: '/pages/3c6974/' },
-  
+
             ],
           },
 

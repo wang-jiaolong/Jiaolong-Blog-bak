@@ -104,6 +104,9 @@ function renderExternal(h, to, text) {
   .level6
     padding-left 0.6rem
 a.sidebar-link
+  overflow hidden
+  white-space nowrap
+  text-overflow ellipsis
   font-size 1em
   font-weight 400
   display inline-block
