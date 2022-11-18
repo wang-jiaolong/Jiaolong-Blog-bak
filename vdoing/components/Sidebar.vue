@@ -53,6 +53,7 @@ export default {
   ul
     padding 0
     margin 0
+    line-height 1
     list-style-type none
   a
     display inline-block
@@ -71,7 +72,7 @@ export default {
     padding 1.5rem 0
     & > li > a.sidebar-link
       font-size 1.1em
-      line-height 1.7
+      line-height 1
       font-weight bold
     & > li:not(:first-child)
       margin-top 0.75rem
